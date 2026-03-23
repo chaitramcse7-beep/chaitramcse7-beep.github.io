@@ -1,0 +1,46 @@
+.cert-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.cert-card {
+  background: linear-gradient(135deg, #ffecd2, #fcb69f);
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.cert-card:hover {
+  transform: translateY(-8px) rotate(-1deg);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.3);
+  background: linear-gradient(135deg, #f6d365, #fda085);
+}
+
+.cert-card h3 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.cert-card .btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background-color: #00d4ff;
+  padding: 8px 15px;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.cert-card .btn:hover {
+  background-color: #00a1c6;
+  transform: scale(1.05);
+}
